@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-gradient{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(115.52deg, #000000 0%, rgba(0, 0, 0, 0.954911) 32%, rgba(60, 60, 60, 0.942278) 36%, rgba(0, 0, 0, 0.92673) 42%, rgba(0, 0, 0, 0.833333) 56.9%, rgba(31, 26, 26, 0.67) 63.86%, rgba(0, 0, 0, 0.39) 81.5%, rgba(0, 0, 0, 0) 123.15%);
+}
+
+#myVideo {
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.menu-article-tactical{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 300px;
+    height: 400px;
+    background: rgb(252, 0, 0);
+    border-radius: 10px;
+    border: 10px solid rgb(0, 0, 0);
+    color: white;
+    background: url(https://steamuserimages-a.akamaihd.net/ugc/48738088253768367/9C07FC165347C95467DBEB38AAD26E7D80F29964/);
+    background-size: cover;
+    background-position: -100px;
+}
+
+.menu-article-weapons{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 300px;
+    height: 400px;
+    background: rgb(252, 0, 0);
+    border-radius: 10px;
+    border: 10px solid rgb(0, 0, 0);
+    color: white;
+    background: url(https://cdn.discordapp.com/attachments/1010959692450770994/1046135208245743658/image.png);
+    background-size: cover;
+    background-position: -150px;
+}
+
+.menu-article-granades{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 0, 0, 0.614);
+    border-radius: 10px;
+    border: 10px solid rgb(0, 0, 0);
+    background: url(https://cdn.discordapp.com/attachments/1045783386192629822/1046132216218009600/grenade.png);
+    background-size: cover;
+    background-position: -110px;
+    color: white;
+}
+
+
+.article-inner-banner{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    margin: 1em;
+    transition: 0.5s;
+}
