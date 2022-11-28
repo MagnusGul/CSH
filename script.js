@@ -110,6 +110,8 @@ $('.menu-article-granades').on('click', function () {
         translateY: '-1000px'
     })
 
+    window.location.href = 'https://razotack.ru/granades/';
+
 })
 
 
