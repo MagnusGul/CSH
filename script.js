@@ -128,3 +128,8 @@ anime({
     }
   });
 
+let media = window.matchMedia('(max-width: 723px)');
+
+if (media.matches) {
+    $(".title").html('Razotack');
+}
