@@ -1,7 +1,24 @@
 let mediaa = window.matchMedia('(max-width: 960px)');
 
 if (mediaa.matches) {
-    $(".main-gradient").html('<div class="menu-article-tactical"><div class="article-inner-banner"><h1>Тактика</h1></div></div><header><h1 class="title">RazoTack - Карманное руководство к игре</h1></header>')
+    let start = 0;
+    let end = 0;
+
+    let page = 1;
+    function pageCheking() {
+        if (page == 0) {
+            $(".main-gradient").html('<div class="menu-article-tactical"><div class="article-inner-banner"><h1>Тактика</h1></div></div><header><h1 class="title">RazoTack - Карманное руководство к игре</h1></header>')
+        }   
+
+        else if (page == 1) {
+            $(".main-gradient").html('<div class="menu-article-granades"><div class="article-inner-banner"><h1>Раскидки</h1></div></div><header><h1 class="title">RazoTack - Карманное руководство к игре</h1></header>')
+        }
+
+        else if (page == 2) {
+            $(".main-gradient").html('<div class="menu-article-weapons"><div class="article-inner-banner"><h1>Оружия</h1></div></div><header><h1 class="title">RazoTack - Карманное руководство к игре</h1></header>')
+        }
+    }
+    pageCheking()
 }
 
 mediaa = window.matchMedia('(max-width: 723px)');
@@ -9,6 +26,16 @@ mediaa = window.matchMedia('(max-width: 723px)');
 if (mediaa.matches) {
     $(".title").html('CS:GO.RazoTack');
 }
+
+
+anime({
+    targets: 'header',
+    height: '7em',
+    duration: 1000,
+    easing: 'easeInOutExpo',
+    delay: 1000
+})
+
 
 
 $('.menu-article-tactical').on('mouseover', function () {
@@ -120,7 +147,7 @@ $('.menu-article-granades').on('click', function () {
         translateY: '-1000px'
     })
 
-    window.location.href = 'http://csgo.razotack.ru/grenades/';
+    window.location.href = 'grenades';
 
 })
 
