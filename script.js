@@ -128,8 +128,12 @@ anime({
     }
   });
 
+
 let mediaa = window.matchMedia('(max-width: 723px)');
 
 if (mediaa.matches) {
     $(".title").html('CS:GO.RazoTack');
 }
+
+
+
