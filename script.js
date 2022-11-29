@@ -128,8 +128,8 @@ anime({
     }
   });
 
-let media = window.matchMedia('(max-width: 723px)');
+let mediaa = window.matchMedia('(max-width: 723px)');
 
-if (media.matches) {
-    $(".title").html('CS:GO .RazoTack');
+if (mediaa.matches) {
+    $(".title").html('CS:GO.RazoTack');
 }
