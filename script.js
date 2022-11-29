@@ -1,4 +1,14 @@
+let mediaa = window.matchMedia('(max-width: 960px)');
 
+if (mediaa.matches) {
+    $(".main-gradient").html('<div class="menu-article-tactical"><div class="article-inner-banner"><h1>Тактика</h1></div></div><header><h1 class="title">RazoTack - Карманное руководство к игре</h1></header>')
+}
+
+mediaa = window.matchMedia('(max-width: 723px)');
+
+if (mediaa.matches) {
+    $(".title").html('CS:GO.RazoTack');
+}
 
 
 $('.menu-article-tactical').on('mouseover', function () {
@@ -129,11 +139,8 @@ anime({
   });
 
 
-let mediaa = window.matchMedia('(max-width: 723px)');
 
-if (mediaa.matches) {
-    $(".title").html('CS:GO.RazoTack');
-}
+
 
 
 

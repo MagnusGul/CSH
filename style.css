@@ -92,9 +92,3 @@ h1 {
     margin: 1em;
     transition: 0.5s;
 }
-
-@media(max-width: 960px) {
-    .main-gradient{
-        width: 300%;
-    }
-}
