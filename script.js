@@ -96,25 +96,21 @@ $('.menu-article-weapons').on('mouseout', function () {
 
 $('.menu-article-weapons').on('click', function () {
 
-    anime({
-        targets: '.menu-article-weapons',
-        translateY: '-1000px'
-    })
+    $('header').css('height', '100vh');
+    setTimeout(()=> {window.location.href = 'weapons/'}, 1000);
 
 })
 
 $('.menu-article-tactical').on('click', function () {
 
-    anime({
-        targets: '.menu-article-tactical',
-        translateY: '-1000px'
-    })
+    $('header').css('height', '100vh');
+    setTimeout(()=> {window.location.href = 'tactics/'}, 1000);
 
 })
 
 $('.menu-article-granades').on('click', function () {
 
     $('header').css('height', '100vh');
-    setTimeout(()=> {window.location.href = 'grenades/'}, '1000');
+    setTimeout(()=> {window.location.href = 'grenades/'}, 1000);
     
 })
