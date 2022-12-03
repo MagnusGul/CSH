@@ -9,7 +9,6 @@ mediaa = window.matchMedia('(max-width: 723px)');
 if (mediaa.matches) {
     $(".title").html('CS:GO.RazoTack');
     $('.myVideo').css('left', '-800px');
-    $('up-button').css('visibility', 'visible');
 }
 
 setTimeout(()=> {$('header').css('height', '7em')}, '1000');
