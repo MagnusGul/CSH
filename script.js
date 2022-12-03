@@ -1,13 +1,32 @@
 let mediaa = window.matchMedia('(max-width: 960px)');
 
+if (mediaa.matches) {
+    $('.up-button').css('visibility', 'visible');
+}
+
 mediaa = window.matchMedia('(max-width: 723px)');
 
 if (mediaa.matches) {
     $(".title").html('CS:GO.RazoTack');
-    $('.myVideo').css('left', '-800px')
+    $('.myVideo').css('left', '-800px');
+    $('up-button').css('visibility', 'visible');
 }
 
 setTimeout(()=> {$('header').css('height', '7em')}, '1000');
+
+$('.up-button').on('click', function() {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    }, {
+        duration: 500,   // по умолчанию «400» 
+        easing: "swing" // по умолчанию «swing» 
+    });
+
+    return false;
+});
 
 
 $('.menu-article-tactical').on('mouseover', function () {
