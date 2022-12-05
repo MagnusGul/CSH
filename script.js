@@ -75,39 +75,39 @@ $('.menu-article-weapons').on('mouseout', function () {
 
 $('.menu-article-tactical').on('mouseover', function () {
 
-    $('.menu-article-tactical .article-inner-banner h1').css('margin-bottom', "60%");
+    $('.menu-article-tactical .menu-article-banner h1').css('margin-bottom', "60%");
 
 })
 
 $('.menu-article-tactical').on('mouseout', function () {
 
-    $('.menu-article-tactical .article-inner-banner h1').css('margin-bottom', "1em");
+    $('.menu-article-tactical .menu-article-banner h1').css('margin-bottom', "1em");
 
 })
 
 
 $('.menu-article-granades').on('mouseover', function () {
 
-    $('.menu-article-granades .article-inner-banner h1').css('margin-bottom', "60%");
+    $('.menu-article-granades .menu-article-banner h1').css('margin-bottom', "60%");
 
 })
 
 $('.menu-article-granades').on('mouseout', function () {
 
-    $('.menu-article-granades .article-inner-banner h1').css('margin-bottom', "1em");
+    $('.menu-article-granades .menu-article-banner h1').css('margin-bottom', "1em");
 
 })
 
 
 $('.menu-article-weapons').on('mouseover', function () {
 
-    $('.menu-article-weapons .article-inner-banner h1').css('margin-bottom', "60%");
+    $('.menu-article-weapons .menu-article-banner h1').css('margin-bottom', "60%");
 
 })
 
 $('.menu-article-weapons').on('mouseout', function () {
 
-    $('.menu-article-weapons .article-inner-banner h1').css('margin-bottom', "1em");
+    $('.menu-article-weapons .menu-article-banner h1').css('margin-bottom', "1em");
 
 })
 
