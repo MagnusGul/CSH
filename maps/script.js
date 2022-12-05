@@ -1,3 +1,16 @@
+let urlParams = new URLSearchParams(window.location.search);
+let params = {};
+
+urlParams.forEach((p, key) => {
+  params[key] = p;
+});
+
+if (params.intermediaryTo == 'grenades') {
+    $('header h1').html('CS:GO.RazoTack Раскидки');
+} else {
+    $('header h1').html('CS:GO.RazoTack Тактика');
+}
+
 let mediaa = window.matchMedia('(max-width: 960px)');
 
 if (mediaa.matches) {

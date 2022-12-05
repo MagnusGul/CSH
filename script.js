@@ -129,6 +129,6 @@ $('.menu-article-tactical').on('click', function () {
 $('.menu-article-granades').on('click', function () {
 
     $('header').css('height', '100vh');
-    setTimeout(()=> {window.location.href = 'grenades/'}, 1000);
+    setTimeout(()=> {window.location.href = 'maps/?intermediaryTo=grenades'}, 1000);
     
 })
