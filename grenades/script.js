@@ -224,7 +224,7 @@ $('.breach').on('mouseover', function () {
         targets: '.breach',
         scale: 1.1,
     });
-    $('.bg-map').css('background-image', 'url(https://cdn.discordapp.com/attachments/1045783386192629822/1049272500854476821/20221204170431_1.jpg');
+    $('.bg-map').css('background-image', 'url(https://cdn.discordapp.com/attachments/1045783386192629822/1049332866548510820/breach_csgo.jpg');
     $('.bg-map').css('opacity', 1)
 })
 
@@ -240,7 +240,7 @@ $('.agency').on('mouseover', function () {
         targets: '.agency',
         scale: 1.1,
     });
-    $('.bg-map').css('background-image', 'url(https://cdn.discordapp.com/attachments/1045783386192629822/1049272500854476821/20221204170431_1.jpg');
+    $('.bg-map').css('background-image', 'url(https://cdn.discordapp.com/attachments/1045783386192629822/1049333317708828702/Cs_agency_thumbnail.webp');
     $('.bg-map').css('opacity', 1)
 })
 
@@ -250,3 +250,17 @@ $('.agency').on('mouseout', function () {
         scale: 1,
     });
 })
+
+let articles = $('.menu-article');
+
+
+for (let i = 0; i <= articles.length; i++) {
+    $(articles[i]).on('mouseover', function () {
+        articles[i].querySelector('h1').style.marginBottom = '60%';
+    })
+
+    $(articles[i]).on('mouseout', function () {
+        articles[i].querySelector('h1').style.marginBottom = '1em';
+    })
+
+}
