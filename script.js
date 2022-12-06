@@ -27,7 +27,6 @@ $('.up-button').on('click', function() {
     return false;
 });
 
-
 $('.menu-article-tactical').on('mouseover', function () {
     anime({
         targets: '.menu-article-tactical',
@@ -122,8 +121,7 @@ $('.menu-article-weapons').on('click', function () {
 $('.menu-article-tactical').on('click', function () {
 
     $('header').css('height', '100vh');
-    setTimeout(()=> {window.location.href = 'tactics/'}, 1000);
-
+    setTimeout(()=> {window.location.href = 'maps/?intermediaryTo=tactics'}, 1000);
 })
 
 $('.menu-article-granades').on('click', function () {

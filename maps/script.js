@@ -7,7 +7,7 @@ urlParams.forEach((p, key) => {
 
 if (params.intermediaryTo == 'grenades') {
     $('header h1').html('CS:GO.RazoTack Раскидки');
-} else {
+} else if (params.intermediaryTo == 'tactics') {
     $('header h1').html('CS:GO.RazoTack Тактика');
 }
 
@@ -21,7 +21,6 @@ setTimeout(()=> {$('header').css('height', '7em')}, '1000');
 
 
 $('.up-button').css('visibility', 'visible');
-
 
 // Up-Button
 $('.up-button').on('click', function() {
@@ -264,6 +263,11 @@ $('.agency').on('mouseout', function () {
     });
 })
 
+$('header h1').on('click', function() {
+    $('header').css('height', '100vh');
+    setTimeout(()=> {window.location.href = '/'}, 1000);
+})
+
 let articles = $('.menu-article');
 
 
@@ -276,4 +280,13 @@ for (let i = 0; i <= articles.length; i++) {
         articles[i].querySelector('h1').style.marginBottom = '1em';
     })
 
+}
+
+let backgrounds = ['https://cdn.discordapp.com/attachments/1045783386192629822/1049687726355644527/mirage_mini-map.jpg']
+
+for (let i = 0; i <= articles.length; i++) {
+    $(articles[i]).css({
+        'background': 'url('+ backgrounds[i] +')',
+        'background-position': 'center center'
+    })
 }
