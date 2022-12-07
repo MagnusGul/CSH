@@ -5,9 +5,9 @@ urlParams.forEach((p, key) => {
   params[key] = p;
 });
 
-if (params.intermediaryTo == 'grenades') {
+if (params.to == 'grenades') {
     $('header h1').html('CS:GO.RazoTack Раскидки');
-} else if (params.intermediaryTo == 'tactics') {
+} else if (params.to == 'tactics') {
     $('header h1').html('CS:GO.RazoTack Тактика');
 }
 
@@ -282,11 +282,25 @@ for (let i = 0; i <= articles.length; i++) {
 
 }
 
-let backgrounds = ['https://cdn.discordapp.com/attachments/1045783386192629822/1049687726355644527/mirage_mini-map.jpg']
+// in backgrounds [~][0] = main background, [~][1] = logo
+let backgrounds = [
+    [
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1049687726355644527/mirage_mini-map.jpg',
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1050024874833367090/mirage_1.png'
+    ], [
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1050021147258929192/Inferno_map.jpg',
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1050022559632068748/Inferno_logojpg.png'
+    ], [
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1050027401347870770/image1-3.png',
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1050027118978940928/dust_2.png'
+    ]
+]
 
 for (let i = 0; i <= articles.length; i++) {
     $(articles[i]).css({
-        'background': 'url('+ backgrounds[i] +')',
+        'background': 'url('+ backgrounds[i][1] +'), url('+ backgrounds[i][0] +')',
+        'background-size': '80%, auto',
+        'background-repeat': 'no-repeat',
         'background-position': 'center center'
     })
 }
