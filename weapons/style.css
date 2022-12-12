@@ -1,7 +1,18 @@
-main {
+section {
     display: flex;
     justify-content: space-around;
     align-items:stretch;
     flex-wrap: wrap;
-    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pistols {
+    background-image: url(https://cdn.discordapp.com/attachments/1045783386192629822/1051933844678389900/pistolSectionBg.jpg);
+}
+
+.shotguns {
+    background-image: url(https://cdn.discordapp.com/attachments/1045783386192629822/1051937147831189594/pendergast-nova-bubblegum-3.jpg);
 }
