@@ -5,10 +5,14 @@ urlParams.forEach((p, key) => {
   params[key] = p;
 });
 
+let viewLink;
+
 if (params.to == 'grenades') {
     $('header h1').html('CS:GO.RazoTack Раскидки');
+    viewLink = 'grenades';
 } else if (params.to == 'tactics') {
     $('header h1').html('CS:GO.RazoTack Тактика');
+    viewLink = 'tactics';
 }
 
 let mediaa = window.matchMedia('(max-width: 960px)');
@@ -18,7 +22,6 @@ if (mediaa.matches) {
 }
 
 setTimeout(()=> {$('header').css('height', '7em')}, '1000');
-
 
 $('.up-button').css('visibility', 'visible');
 
@@ -270,18 +273,6 @@ $('header h1').on('click', function() {
 
 let articles = $('.menu-article');
 
-
-for (let i = 0; i <= articles.length; i++) {
-    $(articles[i]).on('mouseover', function () {
-        articles[i].querySelector('h1').style.marginBottom = '60%';
-    })
-
-    $(articles[i]).on('mouseout', function () {
-        articles[i].querySelector('h1').style.marginBottom = '1em';
-    })
-
-}
-
 // in backgrounds [~][0] = main background, [~][1] = logo
 let backgrounds = [
     [
@@ -297,10 +288,23 @@ let backgrounds = [
 ]
 
 for (let i = 0; i <= articles.length; i++) {
+    $(articles[i]).on('mouseover', function () {
+        this.querySelector('h1').style.marginBottom = '60%';
+    })
+
+    $(articles[i]).on('mouseout', function () {
+        this.querySelector('h1').style.marginBottom = '1em';
+    })
     $(articles[i]).css({
         'background': 'url('+ backgrounds[i][1] +'), url('+ backgrounds[i][0] +')',
         'background-size': '80%, auto',
         'background-repeat': 'no-repeat',
         'background-position': 'center center'
     })
+    $(articles[i]).on('click', function() {
+        $('header').css('height', '100vh');
+        setTimeout(()=> {window.location.href = 'view/?map='+articles[i].classList[1]+'&mode='+viewLink}, 1000);
+    })
 }
+
+

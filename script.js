@@ -70,8 +70,6 @@ $('.menu-article-weapons').on('mouseout', function () {
 })
 
 
-
-
 $('.menu-article-tactical').on('mouseover', function () {
 
     $('.menu-article-tactical .menu-article-banner h1').css('margin-bottom', "60%");
@@ -121,12 +119,11 @@ $('.menu-article-weapons').on('click', function () {
 $('.menu-article-tactical').on('click', function () {
 
     $('header').css('height', '100vh');
-    setTimeout(()=> {window.location.href = 'maps/?intermediaryTo=tactics'}, 1000);
+    setTimeout(()=> {window.location.href = 'maps/?to=tactics'}, 1000);
 })
 
 $('.menu-article-granades').on('click', function () {
 
     $('header').css('height', '100vh');
-    setTimeout(()=> {window.location.href = 'maps/?intermediaryTo=grenades'}, 1000);
-    
+    setTimeout(()=> {window.location.href = 'maps/?to=grenades'}, 1000);
 })

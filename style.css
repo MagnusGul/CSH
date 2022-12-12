@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
-
-.main-gradient{
+.main-gradient {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -18,8 +16,7 @@
     min-height: 100%;
 }
 
-
-.menu-article-tactical{
+.menu-article-tactical {
     cursor: pointer;
     margin: 30px;
     z-index: 1;
@@ -36,7 +33,7 @@
     background-position: -100px;
 }
 
-.menu-article-weapons{
+.menu-article-weapons {
     cursor: pointer;
     margin: 30px;
     z-index: 1;
@@ -53,7 +50,7 @@
     background-position: -150px;
 }
 
-.menu-article-granades{
+.menu-article-granades {
     cursor: pointer;
     margin: 30px;
     z-index: 1;
