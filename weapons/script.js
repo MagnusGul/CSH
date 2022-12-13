@@ -11,6 +11,7 @@ $('header h1').on('click', function() {
 
 */
 let weapons = [
+    // pistols 
     {class: 'usp-s', name: 'USP-S', group: 'pistols', photo: ''},
     {class: 'p2000', name: 'P2000', group: 'pistols', photo: ''},
     {class: 'glock-18', name: 'Glock-18', group: 'pistols', photo: ''},
@@ -20,17 +21,36 @@ let weapons = [
     {class: 'tec-9', name: 'TEC-9', group: 'pistols', photo: ''},
     {class: 'cz-75auto', name: 'CZ-75 Auto', group: 'pistols', photo: ''},
     {class: 'deagle', name: 'Desert-Eagle', group: 'pistols', photo: ''},
-    {class: 'r8', name: 'Revolver R8', group: 'pistols', photo: ''}
+    {class: 'r8', name: 'Revolver R8', group: 'pistols', photo: ''},
+    // shotguns
+    {class: 'nova', name: 'Nova', group: 'shotguns', photo: ''},
+    {class: 'xm1014', name: 'XM1014', group: 'shotguns', photo: ''},
+    {class: 'mag-7', name: 'MAG-7', group: 'shotguns', photo: ''},
+    {class: 'saved-off', name: 'Saved-Off', group: 'shotguns', photo: ''},
+    // smg
+    {class: 'mp-9', name: 'MP-9', group: 'smg', photo: ''},
+    {class: 'mac-10', name: 'MAC-10', group: 'smg', photo: ''},
+    {class: 'mp-7', name: 'MP-7', group: 'smg', photo: ''},
+    {class: 'mp-5', name: 'MP-5', group: 'smg', photo: ''},
+    {class: 'ump', name: 'UMP', group: 'smg', photo: ''},
+    {class: 'p90', name: 'P-90', group: 'smg', photo: ''},
+    {class: 'pp-19-bizon', name: 'ПП-19 "Бизон"', group: 'smg', photo: ''},
+    //rifles
+    {class: 'famas', name: 'Famas', group: 'rifles', photo: ''},
+    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
+    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
+    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
+    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
+    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
+    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
 ];
 
 
 // adding the objects on a site
 for (let i = 0; i < weapons.length; i++) {
-    if (weapons[i]['group'] == 'pistols') {
-        $('.pistols').append(
-            '<div class="menu-article '+ weapons[i]['class'] + '"><div class="menu-article-banner"><h1>'+ weapons[i]['name'] +'</h1></div></div>'
-        )
-    }
+    $('.' + weapons[i]['group']).append(
+        '<div class="menu-article '+ weapons[i]['class'] + '"><div class="menu-article-banner"><h1>'+ weapons[i]['name'] +'</h1></div></div>'
+    )
 }
 
 // object animation
