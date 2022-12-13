@@ -37,12 +37,12 @@ let weapons = [
     {class: 'pp-19-bizon', name: 'ПП-19 "Бизон"', group: 'smg', photo: ''},
     //rifles
     {class: 'famas', name: 'Famas', group: 'rifles', photo: ''},
-    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
-    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
-    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
-    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
-    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
-    {class: 'p90', name: 'P-90', group: 'rifles', photo: ''},
+    {class: 'galil-ar', name: 'GalilAR', group: 'rifles', photo: ''},
+    {class: 'm4a4', name: 'M4A4', group: 'rifles', photo: ''},
+    {class: 'm4a1-s', name: 'M4A1-S', group: 'rifles', photo: ''},
+    {class: 'ak-47', name: 'AK-47', group: 'rifles', photo: ''},
+    {class: 'aug', name: 'AUG', group: 'rifles', photo: ''},
+    {class: 'sg-553', name: 'SG-553', group: 'rifles', photo: ''},
 ];
 
 

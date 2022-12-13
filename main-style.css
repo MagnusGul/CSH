@@ -33,6 +33,17 @@ header {
     
 }
 
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items:stretch;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .up-button {
     cursor: pointer;
     visibility: hidden;

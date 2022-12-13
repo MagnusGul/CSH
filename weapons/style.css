@@ -1,14 +1,3 @@
-section {
-    display: flex;
-    justify-content: space-around;
-    align-items:stretch;
-    flex-wrap: wrap;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 .pistols {
     background-image: url(https://cdn.discordapp.com/attachments/1045783386192629822/1051933844678389900/pistolSectionBg.jpg);
 }
@@ -19,4 +8,8 @@ section {
 
 .smg {
     background-image: url(https://cdn.discordapp.com/attachments/1045783386192629822/1052244257970343956/web-FNP90-03-1024x768.webp);
+}
+
+.rifles {
+    background-image: url(https://cdn.discordapp.com/attachments/1045783386192629822/1052295544279679016/794142428_preview_Csgo-ak47-fuel-injector-workshop-1024x576.jpg);
 }
