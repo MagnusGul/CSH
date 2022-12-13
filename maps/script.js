@@ -26,6 +26,7 @@ setTimeout(()=> {$('header').css('height', '7em')}, '1000');
 $('.up-button').css('visibility', 'visible');
 
 // Up-Button
+
 $('.up-button').on('click', function() {
 
     let href = $(this).attr('href');
@@ -284,10 +285,19 @@ let backgrounds = [
     ], [
         'https://cdn.discordapp.com/attachments/1045783386192629822/1050027401347870770/image1-3.png',
         'https://cdn.discordapp.com/attachments/1045783386192629822/1050027118978940928/dust_2.png'
+    ], [
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1052226439749054484/2d52ae386b175aeb.png',
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1052225711462678528/62fae6131fae1b66.png'
+    ], [
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1052238362137874453/1547327054_de_nuke.png',
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1052228472782733392/nuke.png'
+    ], [
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1052230262722924565/pozii-na-karte-Vertigo.png',
+        'https://cdn.discordapp.com/attachments/1045783386192629822/1052230288194936832/vertigo.png'
     ]
 ]
 
-for (let i = 0; i <= articles.length; i++) {
+for (let i = 0; i < articles.length; i++) {
     $(articles[i]).on('mouseover', function () {
         this.querySelector('h1').style.marginBottom = '60%';
     })
