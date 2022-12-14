@@ -5,17 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/main-style.css">
-    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/lib/logo.png">
-    <title>CS:GO.RazoTack |</title>
+    <title>CS:GO.RazoTack | </title>
 </head>
 <body>
+    <header><h1>CS:GO.RazoTack </h1></header>
+
+    <div class="container">
+        <div class="preview">
+            <div class="img"><img src="" alt="Фото оружия"></div>
+            <table class="damage">
+                <tr>                    <td>Часть тела   </td>  <td              > Без брони </td>  <td> С броней </td></tr>
+                <tr class="head">       <td>Голова       </td>  <td class="nude">           </td>  <td class="armor">          </td></tr>
+                <tr class="arms-chest"> <td>Грудь и руки </td>  <td class="nude">           </td>  <td class="armor">          </td></tr>
+                <tr class="stomach">    <td>Живот        </td>  <td class="nude">           </td>  <td class="armor">          </td></tr>
+                <tr class="legs">       <td>Ноги         </td>  <td class="nude">           </td>  <td class="armor">          </td></tr>
+            </table>
+        </div>
+        <table class="view">
+            <tr class="Equipment-active"> <td class="name"></td> <td></td> </tr>
+        </table>
+    </div>
 
     <script src="/anime.js"></script>
     <script
         src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
         crossorigin="anonymous"></script>
+    <script src="../weapons.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
