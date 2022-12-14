@@ -13,6 +13,20 @@ for (let i = 0; i < weapons.length; i++) {
 }
 
 // object animation
+$('.up-button').on('click', function() {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    }, {
+        duration: 500,
+        easing: "swing" 
+    });
+
+    return false;
+});
+
 let articles = $('.menu-article');
 
 for (let i = 0; i <= articles.length; i++) {

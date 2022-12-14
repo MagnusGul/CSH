@@ -25,3 +25,7 @@
 .grenades {
     background-image: url(https://cdn.discordapp.com/attachments/1045783386192629822/1046132216218009600/grenade.png);
 }
+
+.up-button {
+    visibility: visible;
+}

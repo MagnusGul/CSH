@@ -16,6 +16,7 @@
 
 .damage {
     width: 50%;
+    margin-bottom: 1em;
 }
 
 table td {
@@ -23,3 +24,7 @@ table td {
     padding: 1em;
     border: 5px solid rgb(25, 25, 25);
 }   
+
+.view table{
+    width: 100%;
+}
