@@ -27,6 +27,33 @@ $('.up-button').on('click', function() {
     return false;
 });
 
+$('.burger').on('mouseover', function () {
+    $(this).css('left', 0) 
+})
+
+$('.burger').on('mouseout', function () {
+    $(this).css('left', '-280px') 
+})
+
+let burgers = $('.burger a');
+
+for (let i = 0; i <= burgers.length; i++) {
+    
+    $(burgers[i]).on('click', function() {
+
+        let href = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        }, {
+            duration: 500,
+            easing: "swing" 
+        });
+
+        return false;
+    })
+}
+
 let articles = $('.menu-article');
 
 for (let i = 0; i <= articles.length; i++) {

@@ -12,6 +12,7 @@ h1 {
     transition: 0.5s;
 }
 
+
 header h1 {
     margin: 0;
     cursor: pointer;
@@ -43,6 +44,61 @@ section {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+     color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    background: rgb(25, 25, 25);
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+
+footer h3 {
+    margin: 10px;
+}
+
+.burger {
+    background-color: rgb(31, 31, 31);
+    width: 300px;
+ 
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: -280px;
+
+    height: 100vh;
+
+    color: white;
+    font-size: larger;
+
+    transition: 0.3s;
+}
+
+.burger .title{
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    border-bottom: white solid 5px;
+}
+
+.burger li{
+    margin-bottom: 1em;
+}
+
+
 
 .up-button {
     cursor: pointer;

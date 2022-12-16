@@ -15,13 +15,37 @@ for (let i = 0; i < weapons.length; i++) {
         $('.img img').attr('src', weapons[i]['photo']);
 
         $('.damage .head .armor').html(weapons[i]['damageArmorHead']);
+        if ($('.damage .head .armor').html() >= 100) {
+            $('.damage .head .armor').css('color', 'red')
+        }
         $('.damage .head .nude').html(weapons[i]['damageNudeHead']);
+        if ($('.damage .head .nude').html() >= 100) {
+            $('.damage .head .nude').css('color', 'red')
+        }
         $('.damage .arms-chest .armor').html(weapons[i]['damageArmorArmsChest']);
+        if ($('.damage .arms-chest .armor').html() >= 100) {
+            $('.damage .arms-chest .armor').css('color', 'red')
+        }
         $('.damage .arms-chest .nude').html(weapons[i]['damageNudeArmsChest']);
+        if ($('.damage .arms-chest .nude').html() >= 100) {
+            $('.damage .arms-chest .nude').css('color', 'red')
+        }
         $('.damage .stomach .armor').html(weapons[i]['damageArmorStomach']);
+        if ($('.damage .stomach .armor').html() >= 100) {
+            $('.damage .stomach .armor').css('color', 'red')
+        }
         $('.damage .stomach .nude').html(weapons[i]['damageNudeStomach']);
+        if ($('.damage .stomach .nude').html() >= 100) {
+            $('.damage .stomach .nude').css('color', 'red')
+        }
         $('.damage .legs .armor').html(weapons[i]['damageArmorLegs']);
+        if ($('.damage .legs .armor').html() >= 100) {
+            $('.damage .legs .armor').css('color', 'red')
+        }
         $('.damage .legs .nude').html(weapons[i]['damageNudeLegs']);
+        if ($('.damage .legs .nude').html() >= 100) {
+            $('.damage .legs .nude').css('color', 'red')
+        }
         
         $('.magazine').html(weapons[i]['EquipmentActive']);
         $('.stock').html(weapons[i]['EquipmentPassive']);

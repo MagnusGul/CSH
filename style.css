@@ -30,7 +30,7 @@
     color: white;
     background: url(https://steamuserimages-a.akamaihd.net/ugc/48738088253768367/9C07FC165347C95467DBEB38AAD26E7D80F29964/);
     background-size: cover;
-    background-position: -100px;
+    background-position: center;
 }
 
 .menu-article-weapons {
@@ -47,7 +47,7 @@
     color: white;
     background: url(https://cdn.discordapp.com/attachments/1010959692450770994/1046135208245743658/image.png);
     background-size: cover;
-    background-position: -150px;
+    background-position: center;
 }
 
 .menu-article-granades {
@@ -63,22 +63,10 @@
     border: 10px solid rgb(0, 0, 0);
     background: url(https://cdn.discordapp.com/attachments/1045783386192629822/1046132216218009600/grenade.png);
     background-size: cover;
-    background-position: -110px;
+    background-position: center;
     color: white;
 }
 
 footer {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    
     position: fixed;
-    background: rgb(25, 25, 25);
-    color: white;
-    width: 100%;
-    bottom: 0;
-}
-
-footer h3 {
-    margin: 10px;
 }
