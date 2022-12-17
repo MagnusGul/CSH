@@ -10,6 +10,8 @@
 }
 
 .img {
+    display: flex;
+    justify-content: center;
     width: 50%;
     height: 100%;
 }
@@ -22,6 +24,7 @@
 table td {
     text-align: center;
     padding: 1em;
+    background-color: rgb(35, 35, 35);
     border: 5px solid rgb(25, 25, 25);
 }   
 

@@ -10,7 +10,19 @@ for (let i = 0; i < weapons.length; i++) {
     $('.' + weapons[i]['group']).append(
         '<div class="menu-article '+ weapons[i]['class'] + '"><div class="menu-article-banner"><h1>'+ weapons[i]['name'] +'</h1></div></div>'
     )
-}
+    $('.'+ weapons[i]['class']).css({
+        'background': 'url('+ weapons[i]['photo'] +')',
+        'background-repeat': 'no-repeat',
+    })
+    
+    if (weapons[i]['group'] == 'pistols') {
+        $('.'+ weapons[i]['class']).css('background-position', 'left-top')
+    } else if (weapons[i]['group'] == 'rifles') {
+        $('.'+ weapons[i]['class']).css('background-position', 'center')
+    } else if (weapons[i]['group'] == 'snipers') {
+        $('.'+ weapons[i]['class']).css('background-position', 'center')
+    }
+}   
 
 // object animation
 $('.up-button').on('click', function() {
